@@ -2,7 +2,6 @@ package jtdiff.util.tests;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
-
 import org.junit.Test;
 
 /**
@@ -22,12 +21,11 @@ public class TestFatherOf extends TestTree {
 	}
 	
 	/**
-	 * Father of root should be None
+	 * Father of root should be null
 	 */
 	@Test
 	public void testRoot() {
 		assertNull(treeTwo.fatherOf(1));
-		
 	}
 	
 	/**
@@ -36,7 +34,5 @@ public class TestFatherOf extends TestTree {
 	@Test(expected = IllegalArgumentException.class)
 	public void testWhenNoSuchNode() {
 		treeTwo.fatherOf(5);
-		
 	}
-
 }

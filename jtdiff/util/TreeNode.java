@@ -64,7 +64,6 @@ public class TreeNode {
 		return this.children.iterator();
 	}
 	
-	
 	/**
 	 * Adds a new child to the node
 	 * @param node is a <code>TreeNode</code> object
@@ -73,7 +72,6 @@ public class TreeNode {
 		this.children.add(node);
 		node.setFather(this);
 	}
-	
 	
 
 	/**
@@ -110,6 +108,4 @@ public class TreeNode {
 	public String debugString() {
 		return String.format("label: %s, preorder_position: %d", label, preorderPosition);
 	}
-	
-	
 }

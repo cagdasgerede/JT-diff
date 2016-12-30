@@ -1,7 +1,6 @@
 package jtdiff.util.tests;
 
 import static org.junit.Assert.assertArrayEquals;
-
 import org.junit.Test;
 
 /**
@@ -10,8 +9,6 @@ import org.junit.Test;
  *
  */
 public class TestPreorderTraversal extends TestTree {
-	
-	
 	/**
 	 * Successfully produce the list of visited node labels
 	 */
@@ -20,18 +17,19 @@ public class TestPreorderTraversal extends TestTree {
 		TraversalVisitor visitor = new TraversalVisitor();
 		treeOne.performPreorderTraversal(visitor);
 		
-		String[] expected = new String[] {"label: A, preorder_position: 1",
+		String[] expected = new String[] {
+				"label: A, preorder_position: 1",
 	            "label: B, preorder_position: 2",
 	            "label: C, preorder_position: 3"};
 		assertArrayEquals(expected, visitor.getTraversal());
 		
 		visitor = new TraversalVisitor();
 		treeTwo.performPreorderTraversal(visitor);
-		expected = new String[] {"label: A, preorder_position: 1",
+		expected = new String[] {
+				"label: A, preorder_position: 1",
 	            "label: B, preorder_position: 2",
 	            "label: C, preorder_position: 3",
 	            "label: D, preorder_position: 4"};
 		assertArrayEquals(expected, visitor.getTraversal());
-		
 	}
 }

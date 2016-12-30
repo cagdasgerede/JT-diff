@@ -14,7 +14,6 @@ import org.junit.Test;
  *
  */
 public class TestAncestorIterator extends TestTree {
-	
 	private Integer[] toArray(ArrayList<Integer> arrayList) {
 		return arrayList.toArray(new Integer[arrayList.size()]);
 	}

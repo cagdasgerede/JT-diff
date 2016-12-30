@@ -16,8 +16,6 @@ public class TestNodeAt extends TestTree {
 	 */
 	@Test
 	public void testNodeAt() {
-		// Testing getting a node from the tree by its preorder position
-		
 		// Tree 1
 		assertEquals("A", treeOne.nodeAt(1).label());
 		assertEquals("B", treeOne.nodeAt(2).label());
@@ -30,6 +28,5 @@ public class TestNodeAt extends TestTree {
 		assertEquals("C", treeTwo.nodeAt(3).label());
 		assertEquals("D", treeTwo.nodeAt(4).label());
 		assertNull(treeTwo.nodeAt(5));
-		
 	}
 }

@@ -1,18 +1,16 @@
 package jtdiff.util.tests;
 
-
-
-
-
 import java.util.ArrayList;
-
 import org.junit.Before;
-
-
 import jtdiff.util.Tree;
 import jtdiff.util.TreeNode;
 import jtdiff.util.Visitor;
 
+/**
+ * 
+ * Builds an array of node labels it visits
+ *
+ */
 class TraversalVisitor extends Visitor {
 	private ArrayList<String> traversal = new ArrayList<>();
 	
@@ -25,13 +23,12 @@ class TraversalVisitor extends Visitor {
 	public String[] getTraversal() {
 		return traversal.toArray(new String[traversal.size()]);
 	}
-	
 }
 
 
 /**
  * 
- * Tests the functionality of Tree
+ * Builds the <code>Tree</code> objects to be used by its children
  *
  */
 public class TestTree {
@@ -46,7 +43,6 @@ public class TestTree {
 		bNode.addChild(cNode);		
 		treeOne = new Tree(aNode);
 		treeOne.buildCaches();
-		
 		
 		aNode = new TreeNode("A");
 		bNode = new TreeNode("B");
@@ -71,10 +67,3 @@ public class TestTree {
 		treeThree.buildCaches();
 	}
 }
-
-
-
-
-
-
-

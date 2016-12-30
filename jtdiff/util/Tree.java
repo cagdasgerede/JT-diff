@@ -37,16 +37,13 @@ public class Tree {
 		this.performPreorderTraversal(visitor);
 	}
 
-	
 	/**
 	 * Performs a preorder traversal on the tree
 	 * @param visitor is used for taking an action on the visited node (the visitor must have a visit method)
 	 */
 	public void performPreorderTraversal(Visitor visitor) {
-		this.root.preorderTraversal(visitor);
-		
+		this.root.preorderTraversal(visitor);		
 	}
-	
 	
 	/**
 	 * Does a preorder traversal and prints the node labels
@@ -55,8 +52,7 @@ public class Tree {
 		Visitor visitor = new DebugVisitor();
 		this.performPreorderTraversal(visitor);
 	}
-	
-	
+		
 	/**
 	 * 
 	 * @param preorderPosition
@@ -86,12 +82,9 @@ public class Tree {
 		TreeNode node = this.preorderPositionToNode.get(preorderPosition);
 		if (node != null) {
 			return node.father();
-		}
-		
+		}		
 		throw new IllegalArgumentException("No node at the given position: " + preorderPosition);
 	}
-	
-	
 	
 	/**
 	 * Produces iteration towards the root starting from the given position
@@ -117,7 +110,6 @@ public class Tree {
 				break;
 			}
 		}
-		
 		return positions.iterator();
 	}
 	
@@ -129,16 +121,17 @@ public class Tree {
 	 * @return the child of a node which is on the path from a 
 	 * descendant of the node to the node (there can only be one such child).
 	 * Returns null if no such node.
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException if no node found at the <code>descendantPosition</code>
 	 */
 	public TreeNode childOnPathFromDescendant(int parentPosition, int descendantPosition) 
 			throws IllegalArgumentException {
-		
 		TreeNode currentChildNode = this.nodeAt(descendantPosition);
 		TreeNode fatherNode = currentChildNode.father();
 		
 		if (fatherNode == null) {
-			throw new IllegalArgumentException("No father node at the given position: " + descendantPosition);
+			throw new IllegalArgumentException(
+					"No father node at the given position: " 
+							+ descendantPosition);
 		}
 		
 		while (fatherNode.preorderPosition() != parentPosition) {
@@ -150,6 +143,4 @@ public class Tree {
 		}
 		return currentChildNode;
 	}
-	
-	
 }
