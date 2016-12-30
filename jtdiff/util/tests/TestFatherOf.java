@@ -17,9 +17,9 @@ public class TestFatherOf extends TestTree {
 	public void testSuccess() {
 		assertEquals(3, treeTwo.fatherOf(4).preorderPosition());
 		assertEquals(1, treeTwo.fatherOf(3).preorderPosition());
-		assertEquals(1, treeTwo.fatherOf(2).preorderPosition());	
+		assertEquals(1, treeTwo.fatherOf(2).preorderPosition());
 	}
-	
+
 	/**
 	 * Father of root should be null
 	 */
@@ -27,7 +27,7 @@ public class TestFatherOf extends TestTree {
 	public void testRoot() {
 		assertNull(treeTwo.fatherOf(1));
 	}
-	
+
 	/**
 	 * Raise error when father of a non-existing node requested
 	 */

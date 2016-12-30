@@ -18,6 +18,5 @@ public class PreOrderMarkingVisitor extends Visitor {
 	public void visit(TreeNode node) {
 		tree.setNodeAt(position, node);
 		position += 1;		
-	}
-	
+	}	
 }

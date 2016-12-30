@@ -13,18 +13,17 @@ import jtdiff.util.Visitor;
  */
 class TraversalVisitor extends Visitor {
 	private ArrayList<String> traversal = new ArrayList<>();
-	
+
 	@Override
 	public void visit(TreeNode node) {
 		traversal.add(node.debugString());
-		
+
 	}
-	
+
 	public String[] getTraversal() {
 		return traversal.toArray(new String[traversal.size()]);
 	}
 }
-
 
 /**
  * 
@@ -40,10 +39,10 @@ public class TestTree {
 		TreeNode bNode = new TreeNode("B");
 		aNode.addChild(bNode);
 		TreeNode cNode = new TreeNode("C");
-		bNode.addChild(cNode);		
+		bNode.addChild(cNode);
 		treeOne = new Tree(aNode);
 		treeOne.buildCaches();
-		
+
 		aNode = new TreeNode("A");
 		bNode = new TreeNode("B");
 		cNode = new TreeNode("C");
@@ -53,7 +52,7 @@ public class TestTree {
 		cNode.addChild(dNode);
 		treeTwo = new Tree(aNode);
 		treeTwo.buildCaches();
-		
+
 		aNode = new TreeNode("A");
 		bNode = new TreeNode("B");
 		cNode = new TreeNode("C");
