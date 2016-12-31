@@ -6,9 +6,7 @@ import static org.junit.Assert.assertNull;
 import org.junit.Test;
 
 /**
- * 
  * Tests <code>nodeAt</code> method of <code>Tree</code> class
- *
  */
 public class TestNodeAt extends TestTree {
 	/**

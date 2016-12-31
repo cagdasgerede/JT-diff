@@ -7,13 +7,10 @@ import org.junit.Test;
 import jtdiff.util.TreeNode;
 
 /**
- * 
  * Tests <code>childOnPathFromDescendant</code> method of <code>Tree</code>
  * class
- *
  */
 public class TestChildOnPathFromDescendant extends TestTree {
-
 	/**
 	 * When there is a node between ancestor and descendant
 	 */

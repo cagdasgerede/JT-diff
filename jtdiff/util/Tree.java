@@ -5,12 +5,9 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 /**
- * 
  * Defines a tree structure of <code>TreeNode</code> elements
- *
  */
 public class Tree {
-
 	private TreeNode root;
 
 	private HashMap<Integer, TreeNode> preorderPositionToNode;
@@ -21,7 +18,6 @@ public class Tree {
 	}
 
 	/**
-	 * 
 	 * @return the number of nodes in the tree
 	 */
 	public int size() {
@@ -39,7 +35,6 @@ public class Tree {
 
 	/**
 	 * Performs a preorder traversal on the tree
-	 * 
 	 * @param visitor
 	 *            is used for taking an action on the visited node (the visitor
 	 *            must have a visit method)
@@ -57,7 +52,6 @@ public class Tree {
 	}
 
 	/**
-	 * 
 	 * @param preorderPosition
 	 * @return the <code>TreeNode</code> node at the given preorder position
 	 */
@@ -67,7 +61,6 @@ public class Tree {
 
 	/**
 	 * Marks the node to be in the given preorder position in the tree
-	 * 
 	 * @param preorderPosition
 	 * @param node
 	 */
@@ -77,7 +70,6 @@ public class Tree {
 	}
 
 	/**
-	 * 
 	 * @param preorderPosition
 	 * @return the father of the node at the given preorder position
 	 * @throws IllegalArgumentException
@@ -94,7 +86,6 @@ public class Tree {
 
 	/**
 	 * Produces iteration towards the root starting from the given position
-	 * 
 	 * @param startingPreorderPosition
 	 * @return preorder positions of the nodes along the path from the node at
 	 *         the given position to the root
@@ -125,7 +116,6 @@ public class Tree {
 
 	/**
 	 * Finds a child node between the parent and the descendant.
-	 * 
 	 * @param parentPosition
 	 * @param descendantPosition
 	 * @return the child of a node which is on the path from a descendant of 

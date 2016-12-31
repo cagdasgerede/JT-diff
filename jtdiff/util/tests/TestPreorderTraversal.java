@@ -4,10 +4,8 @@ import static org.junit.Assert.assertArrayEquals;
 import org.junit.Test;
 
 /**
- * 
  * Tests <code>performPreorderTraversal</code> method of 
  * <code>Tree</code> class
- *
  */
 public class TestPreorderTraversal extends TestTree {
 	/**

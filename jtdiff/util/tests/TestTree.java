@@ -7,9 +7,7 @@ import jtdiff.util.TreeNode;
 import jtdiff.util.Visitor;
 
 /**
- * 
  * Builds an array of node labels it visits
- *
  */
 class TraversalVisitor extends Visitor {
 	private ArrayList<String> traversal = new ArrayList<>();
@@ -26,9 +24,7 @@ class TraversalVisitor extends Visitor {
 }
 
 /**
- * 
- * Builds the <code>Tree</code> objects to be used by its children
- *
+ * Builds the <code>Tree</code> objects to be used by its inherited classes
  */
 public class TestTree {
 	protected Tree treeOne, treeTwo, treeThree;

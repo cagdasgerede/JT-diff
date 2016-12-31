@@ -9,9 +9,7 @@ import java.util.Iterator;
 import org.junit.Test;
 
 /**
- * 
  * Tests <code>ancestorIterator</code> method of <code>Tree</code> class
- *
  */
 public class TestAncestorIterator extends TestTree {
 	private Integer[] toArray(ArrayList<Integer> arrayList) {
@@ -23,7 +21,6 @@ public class TestAncestorIterator extends TestTree {
 	 */
 	@Test
 	public void testSuccess() {
-
 		ArrayList<Integer> ancestorPreorderPositions = new ArrayList<>();
 		Iterator<Integer> iterator = treeTwo.ancestorIterator(4);
 		while (iterator.hasNext()) {
@@ -57,7 +54,6 @@ public class TestAncestorIterator extends TestTree {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testFromNonExistingPosition() {
-
 		Iterator<Integer> iterator = treeTwo.ancestorIterator(100);
 		while (iterator.hasNext()) {
 			fail("Should not return anyhting");

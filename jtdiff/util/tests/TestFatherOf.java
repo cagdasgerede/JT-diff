@@ -5,9 +5,7 @@ import static org.junit.Assert.assertNull;
 import org.junit.Test;
 
 /**
- * 
  * Tests <code>fatherOf</code> method of <code>Tree</code> class
- *
  */
 public class TestFatherOf extends TestTree {
 	/**

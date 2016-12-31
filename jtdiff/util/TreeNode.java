@@ -26,9 +26,7 @@ public class TreeNode {
 	}
 
 	/**
-	 * Returns the label of this node
-	 * 
-	 * @return label
+	 * @return the label of this node
 	 */
 	public String label() {
 		return label;
@@ -36,8 +34,7 @@ public class TreeNode {
 
 	/**
 	 * Sets the label of this node
-	 * 
-	 * @param label
+	 * @param label representing new label to be set
 	 */
 	public void setLabel(String label) {
 		this.label = label;
@@ -45,7 +42,6 @@ public class TreeNode {
 
 	/**
 	 * Returns the father of the node
-	 * 
 	 * @return <code>TreeNode</code> object representing the father of the node
 	 */
 	public TreeNode father() {
@@ -54,9 +50,7 @@ public class TreeNode {
 
 	/**
 	 * Sets the father of the node
-	 * 
-	 * @param father
-	 *            is an instance of <code>TreeNode</code>
+	 * @param father is an instance of <code>TreeNode</code>
 	 */
 	public void setFather(TreeNode father) {
 		this.father = father;
@@ -84,7 +78,6 @@ public class TreeNode {
 
 	/**
 	 * Returns the position of the node in the preorder traversal
-	 * 
 	 * @return int value representing preorder position
 	 */
 	public int preorderPosition() {
@@ -93,9 +86,7 @@ public class TreeNode {
 
 	/**
 	 * Sets the preorder traversal position
-	 * 
-	 * @param newPosition
-	 *            for new preorder position
+	 * @param newPosition for new preorder position
 	 */
 	public void setPreorderPosition(int newPosition) {
 		preorderPosition = newPosition;
@@ -103,7 +94,6 @@ public class TreeNode {
 
 	/**
 	 * Does a preorder traversal of the subtree rooted at this node
-	 * 
 	 * @param visitor
 	 *            should have a <code>visit</code> method accepting a
 	 *            <code>TreeNode</code>
@@ -116,7 +106,6 @@ public class TreeNode {
 	}
 
 	/**
-	 * 
 	 * @return a <code>String</code> representation for this node for debugging
 	 */
 	public String debugString() {
